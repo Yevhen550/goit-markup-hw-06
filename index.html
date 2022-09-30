@@ -480,11 +480,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальне вікно -->
+
     <div class="backdrop is-hidden" data-modal>
 
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
-          <svg class="clients-icon" width="11px" height="11px">
+          <svg class="clients-icon" width="18px" height="18px">
             <use href="./images/svg/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -515,6 +518,18 @@
             <label for="email">Пошта</label>
             <input type="text" name="email" id="email">
           </div>
+
+          <div class="modal-field">
+            <label for="feedback">Коментар<textarea 
+            name="feedback" id="feedback" rows="5" placeholder="Введіть текст"></textarea>
+            </label>
+          </div>
+
+          <div class="modal-field check">
+            <input type="checkbox" name="" id="">
+          </div>
+
+          <button class="btn-submit" type="submit">Відправити</button>
 
         </form>
 
