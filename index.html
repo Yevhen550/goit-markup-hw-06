@@ -481,12 +481,43 @@
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
+
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
           <svg class="clients-icon" width="11px" height="11px">
             <use href="./images/svg/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+        <form class="modal-form">
+          <div class="modal-field">
+            <svg class="modal-icon" width="18px" height="18px">
+              <use href="./images/svg/icons.svg#icon-person"></use>
+            </svg>
+            <label for="name">Ім'я</label>
+            <input type="text" name="name" id="name" autofocus>
+          </div>
+
+          <div class="modal-field">
+            <svg class="modal-icon" width="18px" height="18px">
+              <use href="./images/svg/icons.svg#icon-tel"></use>
+            </svg>
+            <label for="tel">Телефон</label>
+            <input type="text" name="tel" id="tel">
+          </div>
+
+          <div class="modal-field">
+            <svg class="modal-icon" width="18px" height="18px">
+              <use href="./images/svg/icons.svg#icon-email"></use>
+            </svg>
+            <label for="email">Пошта</label>
+            <input type="text" name="email" id="email">
+          </div>
+
+        </form>
+
       </div>
     </div>
     <script src="./js/modal.js"></script>
