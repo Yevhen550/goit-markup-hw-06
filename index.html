@@ -537,12 +537,17 @@
             </label>
           </div>
 
-          <div class="modal-field check">
-            <input type="checkbox" name="checkbox" id="checkbox" required />
-            <p class="checkbox-title">
-              Погоджуюся з розсилкою та приймаю
-              <a class="modal-link" href="#">Умови договору</a>
-            </p>
+          <div class="modal-field-check">          
+            <input class="modal-input-check" type="checkbox" name="checkbox" id="checkbox" required />
+            
+            <label class="checkbox-title" for="checkbox">
+              <div class="modal-checkbox">
+                <svg class="chekbox-icon" width="16px" height="15px">
+                  <use href="./images/svg/icons.svg#icon-check"></use>
+                </svg>
+              </div>
+              Погоджуюся з розсилкою та приймаю 
+              <a class="modal-link" href="#"> Умови договору</a></label>
           </div>
 
           <button class="btn-submit" type="submit">Відправити</button>

@@ -794,7 +794,7 @@ img {
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  c
 }
 
 .close-button:hover {
@@ -825,6 +825,12 @@ img {
   letter-spacing: 0.06em;
   margin: auto;
   margin-top: 30px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: var(--background-color-btn);
 }
 
 .input-wrap {
@@ -856,6 +862,7 @@ img {
 }
 
 .modal-link {
+  margin-left: 10px;
   color: var(--accent-color);
 }
 
@@ -900,12 +907,49 @@ img {
 }
 
 .checkbox-title {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
+.modal-field-check {
+  display: flex;
+  align-items: center;
+}
+
 textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-input-check {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+
+
+.modal-checkbox {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  margin-right: 9px;
+}
+
+.modal-field-check input:checked + label .modal-checkbox {
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
 }
