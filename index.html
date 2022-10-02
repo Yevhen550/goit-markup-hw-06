@@ -484,7 +484,6 @@
     <!-- Модальне вікно -->
 
     <div class="backdrop is-hidden" data-modal>
-
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
           <svg class="clients-icon" width="18px" height="18px">
@@ -496,43 +495,58 @@
 
         <form class="modal-form">
           <div class="modal-field">
-            <svg class="modal-icon" width="18px" height="18px">
-              <use href="./images/svg/icons.svg#icon-person"></use>
-            </svg>
-            <label for="name">Ім'я</label>
-            <input type="text" name="name" id="name" autofocus>
+            <label class="modal-label" for="name">Ім'я</label>
+            <div class="input-wrap">
+              <input class="modal-input" type="text" name="name" id="name" autofocus  required/>
+              <svg class="modal-icon" width="18px" height="18px">
+                <use href="./images/svg/icons.svg#icon-person"></use>
+              </svg>
+            </div>            
           </div>
 
           <div class="modal-field">
-            <svg class="modal-icon" width="18px" height="18px">
-              <use href="./images/svg/icons.svg#icon-tel"></use>
-            </svg>
-            <label for="tel">Телефон</label>
-            <input type="text" name="tel" id="tel">
+            <label class="modal-label" for="tel">Телефон</label>
+            <div class="input-wrap">
+              <input class="modal-input" type="tel" name="tel" id="tel" required/>
+              <svg class="modal-icon" width="18px" height="18px">
+                <use href="./images/svg/icons.svg#icon-tel"></use>
+              </svg>
+              <span class="error">Не вірно введено</span>
+            </div>            
           </div>
 
           <div class="modal-field">
-            <svg class="modal-icon" width="18px" height="18px">
-              <use href="./images/svg/icons.svg#icon-email"></use>
-            </svg>
-            <label for="email">Пошта</label>
-            <input type="text" name="email" id="email">
+            <label class="modal-label" for="email">Пошта</label>
+            <div class="input-wrap">
+              <input class="modal-input" type="email" name="email" id="email" required />
+              <svg class="modal-icon" width="18px" height="18px">
+                <use href="./images/svg/icons.svg#icon-email"></use>
+              </svg>
+              <span class="error">Не вірно введено</span>
+            </div>
           </div>
 
           <div class="modal-field">
-            <label for="feedback">Коментар<textarea 
-            name="feedback" id="feedback" rows="5" placeholder="Введіть текст"></textarea>
+            <label class="modal-label" for="feedback"
+              >Коментар<textarea
+                name="feedback"
+                id="feedback"
+                rows="5"
+                placeholder="Введіть текст"
+              ></textarea>
             </label>
           </div>
 
           <div class="modal-field check">
-            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="checkbox" id="checkbox" required />
+            <p class="checkbox-title">
+              Погоджуюся з розсилкою та приймаю
+              <a class="modal-link" href="#">Умови договору</a>
+            </p>
           </div>
 
           <button class="btn-submit" type="submit">Відправити</button>
-
         </form>
-
       </div>
     </div>
     <script src="./js/modal.js"></script>
