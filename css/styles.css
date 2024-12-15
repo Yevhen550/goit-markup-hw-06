@@ -1176,6 +1176,139 @@ address {
 
 /* #endregion */
 
+/* #region Mobile-menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  opacity: 0;
+
+  background-color: var(--cl-white-background);
+  transition: opacity var(--transition-hover-focus),
+    visibility var(--transition-hover-focus);
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+
+  position: relative;
+
+  padding: 72px 16px 40px;
+}
+
+.mobile-menu-nav {
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.mobile-menu-item {
+}
+
+.mobile-menu-link {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--cl-dark-navy-blue);
+}
+.mobile-menu-link.active {
+  color: var(--cl-active-ocean);
+}
+
+.mobile-menu-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.mobile-menu-adress {
+}
+.mobile-menu-adress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mobile-menu-adress-item {
+}
+.mobile-menu-adress-link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: var(--cl-text-slate);
+
+  transition: color var(--transition-hover-focus);
+}
+
+.mobile-menu-adress-link:hover,
+.mobile-menu-adress-link:focus {
+  color: var(--cl-primary-iris);
+}
+
+.socials-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials-item {
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-color: var(--cl-primary-iris);
+
+  color: var(--cl-light-cloud);
+
+  transition: background-color var(--transition-hover-focus);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--cl-active-ocean);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
+.mobile-menu-socials-list {
+}
+.mobile-menu-socials-item {
+}
+.mobile-menu-socials-link {
+}
+.mobile-menu-socials-icon {
+}
+/* #endregion */
 /* *============================================================================================================================================== */
 /* #region */
 /* #endregion */
