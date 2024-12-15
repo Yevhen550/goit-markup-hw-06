@@ -179,6 +179,7 @@ address {
 
 .header-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -194,7 +195,12 @@ address {
 }
 
 .header-logo {
-  margin-right: 76px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 76px;
+  }
 }
 
 .header-nav-list {
@@ -243,31 +249,53 @@ address {
   border-radius: 2px;
 }
 
-.contact-list {
+.contact {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.contact-list {
 }
 
 @media screen and (min-width: 768px) {
   .contact-list {
     display: flex;
-    gap: 40px;
-    align-items: center;
+    flex-direction: column;
+    gap: 12px;
   }
 }
 
-.contact {
-  margin-left: auto;
+@media screen and (min-width: 1158px) {
+  .contact-list {
+    flex-direction: row;
+    gap: 40px;
+  }
 }
 
 .contact-item {
 }
 
 .contact-link {
-  display: block;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: var(--cl-text-slate);
   transition: color var(--transition-hover-focus);
+}
+
+@media screen and (min-width: 1158px) {
+  .contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 }
 
 .header-link:hover,
