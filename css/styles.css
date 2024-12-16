@@ -194,9 +194,6 @@ address {
   }
 }
 
-.header-logo {
-}
-
 @media screen and (min-width: 768px) {
   .header-logo {
     margin-right: 76px;
@@ -260,9 +257,6 @@ address {
   }
 }
 
-.contact-list {
-}
-
 @media screen and (min-width: 768px) {
   .contact-list {
     display: flex;
@@ -276,9 +270,6 @@ address {
     flex-direction: row;
     gap: 40px;
   }
-}
-
-.contact-item {
 }
 
 .contact-link {
@@ -453,20 +444,9 @@ address {
   }
 }
 
-.hero-btn {
-}
-
 /* #endregion */
 
 /* #region-Features */
-.features {
-}
-
-.features-container {
-}
-
-.features-title {
-}
 
 .features-list {
   display: flex;
@@ -564,9 +544,6 @@ address {
 /* #region-Team */
 .team {
   background-color: var(--cl-light-cloud);
-}
-
-.team-container {
 }
 
 .team-title {
@@ -689,11 +666,6 @@ address {
 /* #endregion */
 
 /* #region-Portfolio */
-.portfolio {
-}
-
-.portfolio-container {
-}
 
 .portfolio-title {
   font-weight: 700;
@@ -750,9 +722,7 @@ address {
 
 .portfolio-box {
   height: 280px;
-
   position: relative;
-
   overflow: hidden;
 }
 
@@ -874,11 +844,6 @@ address {
   letter-spacing: 0.02em;
 
   color: var(--cl-light-cloud);
-}
-
-@media screen and (min-width: 768px) {
-  .footer-desription {
-  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1032,6 +997,7 @@ address {
 /* #endregion */
 
 /* #region Modal */
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1074,7 +1040,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .modal {
-    width: 408px;
+    max-width: 408px;
     min-height: 584px;
     padding: 72px 24px 24px;
   }
@@ -1121,9 +1087,6 @@ address {
 }
 
 /****** Modal-form *****/
-
-.modal-form {
-}
 
 .modal-form-field {
   margin-bottom: 8px;
@@ -1240,9 +1203,6 @@ address {
   color: var(--cl-primary-iris);
 }
 
-.modal-form-btn {
-}
-
 /* #endregion */
 
 /* #region Mobile-menu */
@@ -1283,15 +1243,10 @@ address {
   padding: 72px 16px 40px;
 }
 
-.mobile-menu-nav {
-}
-
 .mobile-menu-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
-}
-.mobile-menu-item {
 }
 
 .mobile-menu-link {
@@ -1311,15 +1266,12 @@ address {
   gap: 48px;
 }
 
-.mobile-menu-adress {
-}
 .mobile-menu-adress-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.mobile-menu-adress-item {
-}
+
 .mobile-menu-adress-link {
   font-size: 20px;
   font-weight: 500;
@@ -1339,9 +1291,6 @@ address {
 .socials-list {
   display: flex;
   justify-content: space-between;
-}
-
-.socials-item {
 }
 
 .socials-link {
@@ -1369,21 +1318,4 @@ address {
   fill: currentColor;
 }
 
-.mobile-menu-socials-list {
-}
-.mobile-menu-socials-item {
-}
-.mobile-menu-socials-link {
-}
-.mobile-menu-socials-icon {
-}
 /* #endregion */
-/* *============================================================================================================================================== */
-/* #region */
-/* #endregion */
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1158px) {
-}
